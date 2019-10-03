@@ -1,0 +1,14 @@
+baseURL = "https://kubernetesdays.london"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Kubernetes Community Days London"
+theme = "kube-simple"
+copyright = "2019 Cloud Native London Ltd."
+enableEmoji = true
+enableRobotsTXT = true
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params.logo]
+  url = "/images/kubernetescommunitydayslogo.png"
