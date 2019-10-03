@@ -15,10 +15,10 @@
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else!</small>
           </div>
           <div class="form-group">
-              <select class="selectpicker form-control" name="interests" title="Select what you're interested in" multiple data-width="100%">
-                  <option>Sponsoring</option>
-                  <option>Speaking</option>
-                  <option>Attending</option>
+              <select class="selectpicker form-control" name="interests[]" title="Select what you're interested in" multiple data-width="100%">
+                  <option value="sponsoring">Sponsoring</option>
+                  <option value="speaking">Speaking</option>
+                  <option value="attending">Attending</option>
               </select>
           </div>
           <button class="btn btn-primary" type="submit">Submit</button>
