@@ -1,30 +1,37 @@
 {{ define "main" }}
-  <main aria-role="main">
-    <div class="homepage-content">
-      {{ with .Site.Params.logo }}
-      <div class="home-container">
-        <div class="homepage-logo">
-          <img src="{{.url}}" alt="Site Logo" />
-        </div>
+<main aria-role="main">
+  <div class="homepage-content">
+    {{ with .Site.Params.logo }}
+    <div class="home-container">
+      <div class="homepage-logo">
+        <img src="{{.url}}" alt="Site Logo" />
+      </div>
+      <div class="form-container">
+        <p>Kubernetes Community Days London is coming in 2019. Register your interest here to be the first to receive
+          updates!</p>
         <form name="express-interest" class="interest-form" data-netlify="true" method="POST">
           <div class="form-group">
             <input type="text" class="form-control" id="name-input" name="name" placeholder="Name">
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" id="input-email" name="email" placeholder="Email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="input-email" name="email" placeholder="Email"
+              aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else!</small>
           </div>
           <div class="form-group">
-              <select class="selectpicker form-control" name="interests[]" title="Select what you're interested in" multiple data-width="100%">
-                  <option value="sponsoring">Sponsoring</option>
-                  <option value="speaking">Speaking</option>
-                  <option value="attending">Attending</option>
-              </select>
+            <select class="selectpicker form-control" name="interests[]" title="Select what you're interested in"
+              multiple data-width="100%">
+              <option value="sponsoring">Sponsoring</option>
+              <option value="speaking">Speaking</option>
+              <option value="attending">Attending</option>
+              <option value="Volunteering">Volunteering</option>
+            </select>
           </div>
           <button class="btn btn-primary" type="submit">Submit</button>
         </form>
       </div>
-      {{end}}
     </div>
-  </main>
+    {{end}}
+  </div>
+</main>
 {{ end }}

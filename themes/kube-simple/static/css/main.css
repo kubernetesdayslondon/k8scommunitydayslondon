@@ -30,10 +30,14 @@ body {
     height: auto;
 }
 
-form {
+.form-container {
     width: 50%;
     margin: 0 auto;
     padding-top: 2em;
+}
+
+.form-container p {
+    text-align: left;
 }
 
 button {
@@ -61,7 +65,7 @@ button {
         max-width: 90%;
     }
 
-    form {
+    .form-container {
         width: 90%;
     }
 }
