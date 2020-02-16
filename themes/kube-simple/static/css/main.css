@@ -15,8 +15,8 @@ body {
 .home-container {
     display: block;
     margin: 0;
-    transform: translateY(15vh);
     text-align: center;
+    padding-top: 100px;
 }
 
 .homepage-logo {
@@ -59,8 +59,7 @@ button {
     }
 
     .home-container {
-        transform: translateY(10vh);
-    }
+        padding-top: 0px;
 
     .homepage-logo img {
         max-width: 90%;
