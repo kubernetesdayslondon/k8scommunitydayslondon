@@ -15,8 +15,8 @@ body {
 .home-container {
     display: block;
     margin: 0;
-    transform: translateY(20vh);
     text-align: center;
+    padding-top: 100px;
 }
 
 .homepage-logo {
@@ -34,6 +34,7 @@ body {
     width: 50%;
     margin: 0 auto;
     padding-top: 2em;
+    text-align: left;
 }
 
 .form-container p {
@@ -46,7 +47,7 @@ button {
 
 .footer {
     position: absolute;
-    bottom: 0;
+    padding-top: 10px;
     width: 100%;
     height: 2.5rem;
     text-align: center;
@@ -58,8 +59,7 @@ button {
     }
 
     .home-container {
-        transform: translateY(10vh);
-    }
+        padding-top: 0px;
 
     .homepage-logo img {
         max-width: 90%;
